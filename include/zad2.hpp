@@ -8,13 +8,13 @@
 class PopGwiazda : public Artysta
 {
   PopGwiazda(const std::string& art,unsigned int lart): Artysta(art, lart) {}
-  void graj(std::ostream& stream) const override {stream << "PopGwiazda: " << getPseudonim();}
+  void graj(std::ostream& str) const override {stream << "PopGwiazda: " << getPseudonim();}
 };
 
 class RapGwiazda : public Artysta
 {
   RapGwiazda(const std::string& art,unsigned int lart): Artysta(art, lart) {}
-  void graj(std::ostream& stream) const override {stream << "RapGwiazda: " << getPseudonim();}
+  void graj(std::ostream& str) const override {stream << "RapGwiazda: " << getPseudonim();}
 };
 
 Artysta* stworzArtyste(const std::string& art)

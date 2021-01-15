@@ -13,7 +13,7 @@ class Artysta
   public:
   Artysta(): pseudonim{"Anonim"}, liczbasluchaczy{0} {}
   Artysta(const std::string& ps, unsigned int ls) : pseudonim{ps}, liczbasluchaczy{ls} {}
-  virtual void graj(std::ostream& art) const override{
+  virtual void graj(std::ostream& str) const override{
     art << pseudonim << ": " << liczbasluchaczy;
   }
   const std::string& getPseudonim() const{
