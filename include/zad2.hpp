@@ -7,13 +7,13 @@
 // tutaj klasy PopGwiazda, RapGwiazda oraz funkcja stworzArtyste
 class PopGwiazda : public Artysta
 {
-  PopGwiazda(const std::string& art,unsigned int lart): Artysta(pg, lpg) {}
+  PopGwiazda(const std::string& art,unsigned int lart): Artysta(art, lart) {}
   void graj(std::ostream& stream) const override {stream << "PopGwiazda: " << getPseudonim();}
 };
 
 class RapGwiazda : public Artysta
 {
-  RapGwiazda(const std::string& art,unsigned int lart): Artysta(rg, lrg) {}
+  RapGwiazda(const std::string& art,unsigned int lart): Artysta(art, lart) {}
   void graj(std::ostream& stream) const override {stream << "RapGwiazda: " << getPseudonim();}
 };
 
