@@ -12,7 +12,7 @@ class Artysta
 {
   public:
   Artysta(): pseudonim{"Anonim"}, liczbasluchaczy{0} {}
-  Artysta(const std::string& ps, unsigned ls) : pseudonim{ps}, liczbasluchaczy{ls} {}
+  Artysta(const std::string& art, unsigned ls) : pseudonim{art}, liczbasluchaczy{ls} {}
   virtual void graj(std::ostream& stream) const {
     stream << pseudonim << ": " << liczbasluchaczy;
   }
