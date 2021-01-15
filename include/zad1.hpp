@@ -12,19 +12,19 @@ class Artysta
 {
   public:
   Artysta(): pseudonim{"Anonim"}, liczbasluchaczy{0} {}
-  Artysta(const std::string& ps, unsigned int ls) : pseudonim{ps}, liczbasluchaczy{ls} {}
-  virtual void graj(std::ostream& str) const override{
-    art << pseudonim << ": " << liczbasluchaczy;
+  Artysta(const std::string& ps, unsigned ls) : pseudonim{ps}, liczbasluchaczy{ls} {}
+  virtual void graj(std::ostream& str) const {
+    str << pseudonim << ": " << liczbasluchaczy;
   }
   const std::string& getPseudonim() const{
       return pseudonim;
   }
-  unsigned getSluchacze() const{
+  const unsigned getSluchacze() const{
       return liczbasluchaczy;
   }
   private:
   std::string pseudonim;
-  unsigned int liczbasluchaczy;
+  unsigned liczbasluchaczy;
 
 };
 
