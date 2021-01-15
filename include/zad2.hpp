@@ -5,13 +5,6 @@
 #include <cctype>
 
 // tutaj klasy PopGwiazda, RapGwiazda oraz funkcja stworzArtyste
-#pragma once
-
-#include "zad1.hpp"
-
-#include <cctype>
-
-// tutaj klasy PopGwiazda, RapGwiazda oraz funkcja stworzArtyste
 class PopGwiazda : public Artysta
 {
 public:
@@ -33,4 +26,3 @@ Artysta* stworzArtyste(const std::string& art)
     else
         return new RapGwiazda{"Ye", 4321};
 }
-
